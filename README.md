@@ -1,40 +1,75 @@
-https://community.kde.org/KIO_GDrive
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# kio-gdrive
 
-Hello there, lonely wanderer and welcome to the magical land of Google Drive!
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/kio-gdrive)
 
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-INSTALLATION
-============
+## Architecture
 
-    $ git clone git://anongit.kde.org/kio-gdrive.git
-    $ cd kio-gdrive
-    $ mkdir build && cd build
-    $ cmake -DCMAKE_INSTALL_PREFIX=`qtpaths --install-prefix` ..
-    $ sudo make install
-    $ kdeinit5 # or just re-login
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-Now you are ready to use the worker. Either click the "Network" button in Dolphin or run:
+## Install
 
-    $ kioclient5 exec gdrive:/
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
+```bash
+git clone https://github.com/Interested-Deving-1896/kio-gdrive.git
+cd kio-gdrive
+```
 
-KNOWN ISSUES
-============
+## Usage
 
-GDocs file don't have file size
-  Not our fault, Google Drive API simply does not return filesize of these files.
-  I think it's because they are in the Google Docs format, so the size is irrelevant,
-  since only GDocs can open them, and if we convert the files into .ODT or .DOCX or
-  whatever else, the size is different (so we would have to measure it manually)
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-Folders have "Unknown" size
-  We cannot provide size information on folders, so I guess this is actually implemented
-  in KIO/Dolphin by simply listing each folder and showing the number of files. This
-  is probably not done on remote filesystems to save bandwidth and improve performance,
-  hence the size is "unknown".
+## Configuration
 
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-TODO
-===========
+## CI
 
-Open tasks are tracked here: https://phabricator.kde.org/tag/kio_gdrive/
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/kio-gdrive`](https://github.com/Interested-Deving-1896/kio-gdrive) and mirrored through:
+
+```
+Interested-Deving-1896/kio-gdrive  ──►  OpenOS-Project-OSP/kio-gdrive  ──►  OpenOS-Project-Ecosystem-OOC/kio-gdrive
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+<!-- License not detected — add a LICENSE file to this repo. -->
+<!-- AI:end:license -->
